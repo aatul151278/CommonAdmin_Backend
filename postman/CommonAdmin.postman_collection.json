@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "2be66bd2-a3d1-4f9d-b332-68cd1b4b86dc",
+		"name": "CommonAdmin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10318831"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "GetAllUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\":1,\r\n    \"limit\":10,\r\n    \"isActive\":true,\r\n    \"searchtext\":\"prajapati\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/user/",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\":\"Atul\",\r\n    \"lastname\":\"Prajapati\",\r\n    \"username\":\"Aatul\",\r\n    \"email\":\"aatul.work@gmail.com\",\r\n    \"password\":\"Aatul\",\r\n    \"idrole\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/user/create",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"2955dd00-7858-457a-bb0d-306b16bd706c\",\r\n    \"lastname\": \"Prajapati\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/user/update",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"9ae8868d-0949-4ba4-9deb-b56bb8323e8e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/user/delete",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
