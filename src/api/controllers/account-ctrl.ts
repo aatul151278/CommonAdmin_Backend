@@ -4,6 +4,7 @@ import { tblusers } from "../../models/tblusers";
 import ErrorHandler from "../../middleware/error-handler";
 import BcryptProvider from '../../providers/bcrypt-encoder';
 import JWTProvider from '../../providers/jwt-encoder';
+import { tblroles } from "../../models/tblroles";
 
 const login = async (req: Request, res: Response) => {
     try {
@@ -37,8 +38,12 @@ const login = async (req: Request, res: Response) => {
         Where[Op.and] = [];
         Where[Op.and].push({ password: { [Op.eq]: hastext } });
 
-        const resLogin = await tblusers.findOne({
+        const resLogin: any = await tblusers.findOne({
             where: Where,
+            include: [{
+                model: tblroles,
+                as: "tblrole"
+            }]
         });
 
         if (resLogin === null) {
@@ -65,6 +70,8 @@ const login = async (req: Request, res: Response) => {
             username: resLogin.username,
             email: resLogin.email,
             name: resLogin.firstname + " " + resLogin.lastname,
+            idrole: resLogin.idrole,
+            roleName: resLogin?.tblrole?.name,
             lastloginAt: new Date()
         }
         return res.status(200).json({

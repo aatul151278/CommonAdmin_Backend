@@ -20,7 +20,7 @@ export function initModels(sequelize: Sequelize) {
   const tblroles = _tblroles.initModel(sequelize);
   const tblusers = _tblusers.initModel(sequelize);
 
-  tblusers.belongsTo(tblroles, { as: "idrole_tblrole", foreignKey: "idrole"});
+  tblusers.belongsTo(tblroles, { as: "tblrole", foreignKey: "idrole"});
   tblroles.hasMany(tblusers, { as: "tblusers", foreignKey: "idrole"});
 
   return {
