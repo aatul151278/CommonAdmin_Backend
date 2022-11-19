@@ -16,7 +16,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"value": "{{Authorization_Token}}",
 								"type": "text"
 							}
 						],
@@ -51,7 +51,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"value": "{{Authorization_Token}}",
 								"type": "text"
 							}
 						],
@@ -86,7 +86,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"value": "{{Authorization_Token}}",
 								"type": "text"
 							}
 						],
@@ -121,7 +121,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"value": "{{Authorization_Token}}",
 								"type": "text"
 							}
 						],
@@ -161,7 +161,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"value": "{{Authorization_Token}}",
 								"type": "text"
 							}
 						],
@@ -196,7 +196,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"value": "{{Authorization_Token}}",
 								"type": "text"
 							}
 						],
@@ -237,7 +237,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"value": "{{Authorization_Token}}",
 								"type": "text"
 							}
 						],
@@ -272,7 +272,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"value": "{{Authorization_Token}}",
 								"type": "text"
 							}
 						],

@@ -68,7 +68,7 @@ const login = async (req: Request, res: Response) => {
             lastloginAt: new Date()
         }
         return res.status(200).json({
-            success: true, message: "Login Successfully", data: { token: JWTProvider.generateJWTToken(userObject), user: userObject }
+            success: true, message: "Login Successfully", data: { token: await JWTProvider.generateJWTToken(userObject), user: userObject }
         });
     } catch (error) { ErrorHandler.throwError(error, req, res); }
 };
@@ -92,10 +92,13 @@ const verifyUser = async (req: Request, res: Response) => {
 const verifyToken = async (token: string): Promise<any> => {
     return new Promise(async (resolve) => {
         try {
-            const objUser = JWTProvider.decodeJWTToken(token);
-            if (objUser && objUser.id) {
-                const isUserexist = await tblusers.count({ where: { id: objUser.id } });
-                return resolve(isUserexist > 0);
+            const isNotExpired = await JWTProvider.verifyJWTToken(token);
+            if (isNotExpired) {
+                const objUser = await JWTProvider.decodeJWTToken(token);
+                if (objUser && objUser.id) {
+                    const isUserexist = await tblusers.count({ where: { id: objUser.id } });
+                    return resolve(isUserexist > 0);
+                }
             }
             return resolve(false);
         } catch (error) {
