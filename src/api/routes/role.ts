@@ -5,7 +5,7 @@ const rolesRouter = express.Router();
 
 rolesRouter.post('/role/', auth.validateToken, RoleCtrl.getRoles);
 rolesRouter.post('/role/create', auth.validateToken, RoleCtrl.saveRole);
-rolesRouter.post('/role/update', auth.validateToken, RoleCtrl.updateRole);
-rolesRouter.post('/role/delete', auth.validateToken, RoleCtrl.deleteRole);
+rolesRouter.put('/role/update', auth.validateToken, RoleCtrl.updateRole);
+rolesRouter.delete('/role/delete', auth.validateToken, RoleCtrl.deleteRole);
 
 export = rolesRouter;

@@ -126,6 +126,127 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "GetAllRole",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"admin\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/role/",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"role",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"name\":\"Customer\",\r\n     \"description\":\"Customer Role\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/role/create",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"role",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Role",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"2\",\r\n    \"description\":\"USER ROLE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/role/update",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"role",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Role",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/role/delete",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"role",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
