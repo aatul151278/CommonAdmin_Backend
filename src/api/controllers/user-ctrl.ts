@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { Op } from "sequelize";
 import { tblusers } from "../../models/tblusers";
-import Encorder from '../../providers/encoder';
+import Encorder from '../../providers/bcrypt-encoder';
 import ErrorHandler from "../../middleware/error-handler";
 
 const getUsers = async (req: Request, res: Response) => {

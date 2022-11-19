@@ -13,7 +13,13 @@
 					"name": "GetAllUser",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"page\":1,\r\n    \"limit\":10,\r\n    \"isActive\":true,\r\n    \"searchtext\":\"prajapati\"\r\n}",
@@ -42,7 +48,13 @@
 					"name": "Create User",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"firstname\":\"Atul\",\r\n    \"lastname\":\"Prajapati\",\r\n    \"username\":\"Aatul\",\r\n    \"email\":\"aatul.work@gmail.com\",\r\n    \"password\":\"Aatul\",\r\n    \"idrole\":1\r\n}",
@@ -71,7 +83,13 @@
 					"name": "Update User",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"id\": \"2955dd00-7858-457a-bb0d-306b16bd706c\",\r\n    \"lastname\": \"Prajapati\"\r\n}",
@@ -100,7 +118,13 @@
 					"name": "Delete User",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"id\":\"9ae8868d-0949-4ba4-9deb-b56bb8323e8e\"\r\n}",
@@ -134,7 +158,13 @@
 					"name": "GetAllRole",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\"name\":\"admin\"}",
@@ -163,7 +193,13 @@
 					"name": "Save Role",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n     \"name\":\"Customer\",\r\n     \"description\":\"Customer Role\"\r\n}",
@@ -174,7 +210,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{Api_URL}}/api/v1/role/create",
+							"raw": "{{Api_URL}}/api/v1/role/create?=",
 							"host": [
 								"{{Api_URL}}"
 							],
@@ -183,6 +219,12 @@
 								"v1",
 								"role",
 								"create"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
 							]
 						}
 					},
@@ -192,7 +234,13 @@
 					"name": "Update Role",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"id\":\"2\",\r\n    \"description\":\"USER ROLE\"\r\n}",
@@ -221,7 +269,13 @@
 					"name": "Delete Role",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI5NTVkZDAwLTc4NTgtNDU3YS1iYjBkLTMwNmIxNmJkNzA2YyIsInVzZXJuYW1lIjoiQWF0dWwiLCJlbWFpbCI6ImFhdHVsLndvcmtAZ21haWwuY29tIiwibmFtZSI6IkF0dWwgUHJhamFwYXRpIiwibGFzdGxvZ2luQXQiOiIyMDIyLTExLTE5VDA2OjQ2OjQ1Ljk3MFoiLCJpYXQiOjE2Njg4NDA0MDUsImV4cCI6MTY2ODg0MDUyNX0.GFs3WutyweSpI-mPN4VfR7z6jBgQIJ4EsNcHYib-6sg",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"id\":\"1\"\r\n}",
@@ -241,6 +295,61 @@
 								"v1",
 								"role",
 								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"aatul.work@gmail.com\",\r\n    \"password\":\"Aatul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/account/login",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/account/verifyUser/2955dd00-7858-457a-bb0d-306b16bd706c",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"verifyUser",
+								"2955dd00-7858-457a-bb0d-306b16bd706c"
 							]
 						}
 					},
