@@ -356,6 +356,178 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Module",
+			"item": [
+				{
+					"name": "GetAllModule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization_Token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/module/",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"module",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Module",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization_Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Register-demo\",\r\n    \"parent_id\":\"6ed45096-e1e9-4917-aa83-9cc918b71a2a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/module/create",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"module",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Module",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization_Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"6ed45096-e1e9-4917-aa83-9cc918b71a2a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/module/delete",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"module",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Module Permission",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization_Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\":1,\r\n    \"limit\":20,\r\n    \"name\":\"user\",\r\n    \"idrole\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/module/permission",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"module",
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Permission",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization_Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idmodule\":\"6ed45096-e1e9-4917-aa83-9cc918b71a2a\",\r\n    \"idrole\":1,\r\n    \"view\": 0,\r\n    \"edit\": 1,\r\n    \"delete\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Api_URL}}/api/v1/module/permission/save",
+							"host": [
+								"{{Api_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"module",
+								"permission",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

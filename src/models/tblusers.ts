@@ -50,7 +50,7 @@ export class tblusers extends Model<tblusersAttributes, tblusersCreationAttribut
       type: DataTypes.STRING(50),
       allowNull: false,
       primaryKey: true,
-      defaultValue: Sequelize.UUIDV4,
+      defaultValue: Sequelize.UUIDV4
     },
     firstname: {
       type: DataTypes.STRING(100),

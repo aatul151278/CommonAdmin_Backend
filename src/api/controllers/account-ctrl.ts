@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from "express";
+import {  Request, Response } from "express";
 import { Op } from "sequelize";
 import { tblusers } from "../../models/tblusers";
 import ErrorHandler from "../../middleware/error-handler";
@@ -42,7 +42,7 @@ const login = async (req: Request, res: Response) => {
             where: Where,
             include: [{
                 model: tblroles,
-                as: "tblrole"
+                as: "idrole_tblrole"
             }]
         });
 
@@ -71,7 +71,7 @@ const login = async (req: Request, res: Response) => {
             email: resLogin.email,
             name: resLogin.firstname + " " + resLogin.lastname,
             idrole: resLogin.idrole,
-            roleName: resLogin?.tblrole?.name,
+            roleName: resLogin?.idrole_tblrole?.name,
             lastloginAt: new Date()
         }
         return res.status(200).json({
